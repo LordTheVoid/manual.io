@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Проверки</title>
     <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA050M1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
   </head>
   <body>
     <header id= begin>
@@ -11,7 +12,7 @@
         <a href="#soft30d">Список читов (30-ти дневный бан)</a> <br>
         <a href="#ss">Ссылки и программы</a> <br>
         <a href="#standart">Стандартная проверка</a><br>
-        <a href="manual_2.html"  target="_blank">Памятка по выдаче наказаний</a><br>
+        <a href="manual_2.html" target="_blank">Памятка по выдаче наказаний</a><br>
         <a href="#Everything">Everything</a> <br>
         <a href="#Shellbag">Shellbag</a> <br>
         <a href="#Process">Process Hacker</a> <br>
@@ -199,10 +200,14 @@
           <h3>Незначительные Модификации(бан 30 дней)</h3></li>
         </blockquote>
         <p>Автокликер|Autoclicker|ArmorHotSwap|Clicker|Xray|X-ray|FreeCam|ElytraSwap|MobHealthBar|AutoFish|invMove|AutoTotem|KEYRAN|BotMek|SeedCracker|WalksyOptimizer|SeedCandy|Autorespawn|WalksyCrystalOptimizer|SpeedCrystals|FlashCrystalOptimizer|SwitchTotems|AutoAttack|InventoryTotem|InventoryProfilesNext|AutoBuy|NBTTooltip|ChestESP|ElytraControl|TapeMouse|ClientSidedCrystals|FeverVisual|Featherclient|Bingsautoattack|AutoAim|Bing`sAutoAttack|AutoAim|Nemo'sInventorySorting|Sortitout|LuminarVisual|Shifttap|DarknessVisual|CleanCut|fastPlase</p>
-        <blockquote >
+        <div class="alert alert-success masege" id = "successMasegeModifications">Строка Автокликер| ... |fastPlase успешно скопирована</div>
+        <input type="text" id="modifications" value="Скопировать Строчку" class="form-control" readonly>
+        <blockquote>
           <h3>Чит-Клиенты (Перманентный бан)</h3>
         </blockquote>
         <p>Impact|Nursultan|baritone|cabaletta|Matix|R3D|LiquidBounce|Liquid|Bounce|ClownClient|Clown|SquadClient|Squad|Inertiaclient|StressClient|Stress|Neverhook|never|hook|SkillClient|Jessica|Hitbox|Hit|Box|CheatEngine|CheatEngine|Cheat|Wintware|VapeV3|VapeV4|Wurst|WWE|Nodus|Flauncher|Forgehax|kyprakc|Cortex|Cortexclient|Jigsaw|Zamorozka|Infinity|Huzuni|Aristois|SalHack|Ares|AresClient|Meteor|MeteorClient|Sigma|Akrien|External|Externalclient|Norules|Norulesclient|Zenwar|Reverse|Reverseclient|Wild|Wildclient|Deadcode|Aurora|Rage|Pyro|Phobos|GishCode|Future|Konas|Rusherhack|Summit|Celestial|CelestialClient|celka|Wolfram|Eternity|Flux|MixWare|Lambda|Doomsday|Winner|WinnerClient|ClickCrystals|Nursultan|Nursultanclient|WaoHits|NightMare|BoberWare|Expensive|Expensiveclient|Dreampool|Shit|ShitClient|Kami|KamiClient|Exloader|Francium|FranciumClient|Excellent|ExcellentClient|arbyz|arbyzClient|Vegaline|Boze|Bozeclient|Rockstar|Rockstarclient|MoonHack|Rasty|RastyClient|Troxill|TroxillClient|weakson|weaksonclient|Shield|Shieldclient|Avalon|Avalonclient|Fuze|Fuzeclient|Minced|Mincedclient|Syracuse|Prestige|PrestigeClient|Nova|Novaclient|Moon|MoonClient|Budget|BudgetClient|Breeze|BleachHack|Wise|Wissend|Asteria|AsteriaClient|Destroy|DestroyClient|Fluger|FlugerClient|Thunderhack|Delta|DeltaClient|NewLauncher|VenusClient|VenusWare|Venus|ghost|ghostclient|CATLAVAN|CATLAVANClient|sanch|sanchclient|EVERLAST|EVERLASTclient|Vortex|Vortexclient|Luminex|Luminexclient|milexhack|Troxil|TroxilFree|TroxilPremium|Xameleon|XameleonClient|Newcode|NewcodeClient|Haruka|HarukaClient|Fatal|Fatalclient|Neverlose|Neverloseclient|FDP|FDPClient|Monoton|Monotonclient|Augustus|Augustusclient|Domik|Domikclient</p>
+        <div class="alert alert-success masege" id = "successMasegeSoft">Строка успешно Impact| ... |Domikclient скопирована</div>
+        <input type="text" id="Soft" value="Скопировать Строчку" class="form-control" readonly>
           <blockquote>
           <h3>Строка для поиска Doomsday</h3>
         </blockquote>
@@ -304,5 +309,6 @@
         <img src="img/Lastactivityview1.png" alt="Lastactivityview Установка"> <br>
         <b>После открытия ожидаем пока загрузка пройдёт полностью, после чего ставим сортировку по времени (Action Time сортировка по самым новым) и проверяем до нужной там даты</b> <br>
         <img src="img/Lastactivityview.png" alt="Lastactivityview">
+        <script src="script.js"></script>
   </body>
 </html>
