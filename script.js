@@ -1,5 +1,5 @@
 modifications.onclick = () => {
-  navigator.clipboard.writeText("Автокликер|Autoclicker|ArmorHotSwap|Clicker|Xray|X-ray|FreeCam|ElytraSwap|MobHealthBar|AutoFish|invMove|AutoTotem|KEYRAN|BotMek|SeedCracker|WalksyOptimizer|SeedCandy|Autorespawn|WalksyCrystalOptimizer|SpeedCrystals|FlashCrystalOptimizer|SwitchTotems|AutoAttack|InventoryTotem|InventoryProfilesNext|AutoBuy|NBTTooltip|ChestESP|ElytraControl|TapeMouse|ClientSidedCrystals|FeverVisual|Featherclient|Bingsautoattack|AutoAim|Bing`sAutoAttack|AutoAim|Nemo'sInventorySorting|Sortitout|LuminarVisual|Shifttap|DarknessVisual|CleanCut|fastPlase")
+  navigator.clipboard.writeText("Автокликер|Autoclicker|ArmorHotSwap|Clicker|Xray|X-ray|FreeCam|ElytraSwap|MobHealthBar|AutoFish|invMove|AutoTotem|KEYRAN|BotMek|SeedCracker|WalksyOptimizer|SeedCandy|Autorespawn|WalksyCrystalOptimizer|SpeedCrystals|FlashCrystalOptimizer|SwitchTotems|AutoAttack|InventoryTotem|InventoryProfilesNext|AutoBuy|NBTTooltip|ChestESP|ElytraControl|TapeMouse|ClientSidedCrystals|FeverVisual|Featherclient|Bingsautoattack|AutoAim|Bing`sAutoAttack|AutoAim|Nemo'sInventorySorting|Sortitout|LuminarVisual|Shifttap|DarknessVisual|CleanCut|fastPlase|VisibleGhosts|Mytheria|MytheriaVisual")
   successMasegeModifications.classList.add('active')
   setTimeout(() => successMasegeModifications.classList.remove('active'), 2000)
 }
