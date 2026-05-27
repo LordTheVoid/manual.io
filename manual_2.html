@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Памятка по выдаче наказаний</title>
+    <style media="screen">
+      h1 {
+        background-color: yellow;
+        border: solid black 2px;
+        text-align: center;
+      }
+      header {
+        margin-top: 60px;
+      }
+      .green {
+        color: green;
+      }
+      .red {
+        color: red;
+      }
+      .command {
+        font-size: 20px;
+      }
+      .Rule1 {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .Rule1-info{
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        background-color: black;
+        color: white;
+        padding: 8px 12px;
+        border-radius: 6px;
+        border: solid #49FFFF 3px;
+        font-size: 14px;
+        white-space: nowrap;
+        transition: opacity 0.25s ease, visibility 0.25s ease;
+        z-index: 100;
+        pointer-events: none;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      }
+      .Rule1:hover .Rule1-info{
+        visibility: visible;
+        opacity: 1;
+      }
+      .Rule2 {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .Rule2-info{
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        background-color: black;
+        color: white;
+        padding: 8px 12px;
+        border-radius: 6px;
+        border: solid #49FFFF 3px;
+        font-size: 14px;
+        white-space: nowrap;
+        transition: opacity 0.25s ease, visibility 0.25s ease;
+        z-index: 100;
+        pointer-events: none;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      }
+      .Rule2:hover .Rule2-info{
+        visibility: visible;
+        opacity: 1;
+      }
+      .Rule3 {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .Rule3-info{
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        background-color: black;
+        color: white;
+        padding: 8px 12px;
+        border-radius: 6px;
+        border: solid #49FFFF 3px;
+        font-size: 14px;
+        white-space: nowrap;
+        transition: opacity 0.25s ease, visibility 0.25s ease;
+        z-index: 100;
+        pointer-events: none;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      }
+      .Rule3:hover .Rule3-info{
+        visibility: visible;
+        opacity: 1;
+      }
+      .Rule4 {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .Rule4-info{
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        background-color: black;
+        color: white;
+        padding: 8px 12px;
+        border-radius: 6px;
+        border: solid #49FFFF 3px;
+        font-size: 14px;
+        white-space: nowrap;
+        transition: opacity 0.25s ease, visibility 0.25s ease;
+        z-index: 100;
+        pointer-events: none;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      }
+      .Rule4:hover .Rule4-info{
+        visibility: visible;
+        opacity: 1;
+      }
+      .Rule5 {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .Rule5-info{
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        background-color: black;
+        color: white;
+        padding: 8px 12px;
+        border-radius: 6px;
+        border: solid #49FFFF 3px;
+        font-size: 14px;
+        white-space: nowrap;
+        transition: opacity 0.25s ease, visibility 0.25s ease;
+        z-index: 100;
+        pointer-events: none;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      }
+      .Rule5:hover .Rule5-info{
+        visibility: visible;
+        opacity: 1;
+      }
+      .Rule6 {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .Rule6-info{
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        background-color: black;
+        color: white;
+        padding: 8px 12px;
+        border-radius: 6px;
+        border: solid #49FFFF 3px;
+        font-size: 14px;
+        white-space: nowrap;
+        transition: opacity 0.25s ease, visibility 0.25s ease;
+        z-index: 100;
+        pointer-events: none;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      }
+      .Rule6:hover .Rule6-info{
+        visibility: visible;
+        opacity: 1;
+      }
+      .Rule7 {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .Rule7-info{
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        background-color: black;
+        color: white;
+        padding: 8px 12px;
+        border-radius: 6px;
+        border: solid #49FFFF 3px;
+        font-size: 14px;
+        white-space: nowrap;
+        transition: opacity 0.25s ease, visibility 0.25s ease;
+        z-index: 100;
+        pointer-events: none;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      }
+      .Rule7:hover .Rule7-info{
+        visibility: visible;
+        opacity: 1;
+      }
+      .Rule8 {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .Rule8-info{
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        background-color: black;
+        color: white;
+        padding: 8px 12px;
+        border-radius: 6px;
+        border: solid #49FFFF 3px;
+        font-size: 14px;
+        white-space: nowrap;
+        transition: opacity 0.25s ease, visibility 0.25s ease;
+        z-index: 100;
+        pointer-events: none;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      }
+      .Rule8:hover .Rule8-info{
+        visibility: visible;
+        opacity: 1;
+      }
+      .Rule9 {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .Rule9-info{
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        background-color: black;
+        color: white;
+        padding: 8px 12px;
+        border-radius: 6px;
+        border: solid #49FFFF 3px;
+        font-size: 14px;
+        white-space: nowrap;
+        transition: opacity 0.25s ease, visibility 0.25s ease;
+        z-index: 100;
+        pointer-events: none;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      }
+      .Rule9:hover .Rule9-info{
+        visibility: visible;
+        opacity: 1;
+      }
+      .Rule10 {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .Rule10-info{
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        background-color: black;
+        color: white;
+        padding: 8px 12px;
+        border-radius: 6px;
+        border: solid #49FFFF 3px;
+        font-size: 14px;
+        white-space: nowrap;
+        transition: opacity 0.25s ease, visibility 0.25s ease;
+        z-index: 100;
+        pointer-events: none;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      }
+      .Rule10:hover .Rule10-info{
+        visibility: visible;
+        opacity: 1;
+      }
+      .Rule11 {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .Rule11-info{
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        background-color: black;
+        color: white;
+        padding: 8px 12px;
+        border-radius: 6px;
+        border: solid #49FFFF 3px;
+        font-size: 14px;
+        white-space: nowrap;
+        transition: opacity 0.25s ease, visibility 0.25s ease;
+        z-index: 100;
+        pointer-events: none;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      }
+      .Rule11:hover .Rule11-info{
+        visibility: visible;
+        opacity: 1;
+      }
+      .Rule12 {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .Rule12-info{
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        background-color: black;
+        color: white;
+        padding: 8px 12px;
+        border-radius: 6px;
+        border: solid #49FFFF 3px;
+        font-size: 14px;
+        white-space: nowrap;
+        transition: opacity 0.25s ease, visibility 0.25s ease;
+        z-index: 100;
+        pointer-events: none;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      }
+      .Rule12:hover .Rule12-info{
+        visibility: visible;
+        opacity: 1;
+      }
+      .Rule13 {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .Rule13-info{
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        background-color: black;
+        color: white;
+        padding: 8px 12px;
+        border-radius: 6px;
+        border: solid #49FFFF 3px;
+        font-size: 14px;
+        white-space: nowrap;
+        transition: opacity 0.25s ease, visibility 0.25s ease;
+        z-index: 100;
+        pointer-events: none;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      }
+      .Rule13:hover .Rule13-info{
+        visibility: visible;
+        opacity: 1;
+      }
+      .Rule14 {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .Rule14-info{
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        background-color: black;
+        color: white;
+        padding: 8px 12px;
+        border-radius: 6px;
+        border: solid #49FFFF 3px;
+        font-size: 14px;
+        white-space: nowrap;
+        transition: opacity 0.25s ease, visibility 0.25s ease;
+        z-index: 100;
+        pointer-events: none;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      }
+      .Rule14:hover .Rule14-info{
+        visibility: visible;
+        opacity: 1;
+      }
+      .Rule15 {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .Rule15-info{
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        background-color: black;
+        color: white;
+        padding: 8px 12px;
+        border-radius: 6px;
+        border: solid #49FFFF 3px;
+        font-size: 14px;
+        white-space: nowrap;
+        transition: opacity 0.25s ease, visibility 0.25s ease;
+        z-index: 100;
+        pointer-events: none;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      }
+      .Rule15:hover .Rule15-info{
+        visibility: visible;
+        opacity: 1;
+      }
+      .Rule16 {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .Rule16-info{
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        background-color: black;
+        color: white;
+        padding: 8px 12px;
+        border-radius: 6px;
+        border: solid #49FFFF 3px;
+        font-size: 14px;
+        white-space: nowrap;
+        transition: opacity 0.25s ease, visibility 0.25s ease;
+        z-index: 100;
+        pointer-events: none;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      }
+      .Rule16:hover .Rule16-info{
+        visibility: visible;
+        opacity: 1;
+      }
+      .Rule17 {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .Rule17-info{
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        background-color: black;
+        color: white;
+        padding: 8px 12px;
+        border-radius: 6px;
+        border: solid #49FFFF 3px;
+        font-size: 14px;
+        white-space: nowrap;
+        transition: opacity 0.25s ease, visibility 0.25s ease;
+        z-index: 100;
+        pointer-events: none;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      }
+      .Rule17:hover .Rule17-info{
+        visibility: visible;
+        opacity: 1;
+      }
+      .Rule18 {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .Rule18-info{
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        background-color: black;
+        color: white;
+        padding: 8px 12px;
+        border-radius: 6px;
+        border: solid #49FFFF 3px;
+        font-size: 14px;
+        white-space: nowrap;
+        transition: opacity 0.25s ease, visibility 0.25s ease;
+        z-index: 100;
+        pointer-events: none;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      }
+      .Rule18:hover .Rule18-info{
+        visibility: visible;
+        opacity: 1;
+      }
+      .Rule19 {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .Rule19-info{
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        background-color: black;
+        color: white;
+        padding: 8px 12px;
+        border-radius: 6px;
+        border: solid #49FFFF 3px;
+        font-size: 14px;
+        white-space: nowrap;
+        transition: opacity 0.25s ease, visibility 0.25s ease;
+        z-index: 100;
+        pointer-events: none;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      }
+      .Rule19:hover .Rule19-info{
+        visibility: visible;
+        opacity: 1;
+      }
+      .Rule20 {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .Rule20-info{
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        background-color: black;
+        color: white;
+        padding: 8px 12px;
+        border-radius: 6px;
+        border: solid #49FFFF 3px;
+        font-size: 14px;
+        white-space: nowrap;
+        transition: opacity 0.25s ease, visibility 0.25s ease;
+        z-index: 100;
+        pointer-events: none;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      }
+      .Rule20:hover .Rule20-info{
+        visibility: visible;
+        opacity: 1;
+      }
+      .Rule21 {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .Rule21-info{
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        background-color: black;
+        color: white;
+        padding: 8px 12px;
+        border-radius: 6px;
+        border: solid #49FFFF 3px;
+        font-size: 14px;
+        white-space: nowrap;
+        transition: opacity 0.25s ease, visibility 0.25s ease;
+        z-index: 100;
+        pointer-events: none;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      }
+      .Rule21:hover .Rule21-info{
+        visibility: visible;
+        opacity: 1;
+      }
+      .Rule22 {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .Rule22-info{
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        background-color: black;
+        color: white;
+        padding: 8px 12px;
+        border-radius: 6px;
+        border: solid #49FFFF 3px;
+        font-size: 14px;
+        white-space: nowrap;
+        transition: opacity 0.25s ease, visibility 0.25s ease;
+        z-index: 100;
+        pointer-events: none;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      }
+      .Rule22:hover .Rule22-info{
+        visibility: visible;
+        opacity: 1;
+      }
+      .Rule23 {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .Rule23-info{
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        background-color: black;
+        color: white;
+        padding: 8px 12px;
+        border-radius: 6px;
+        border: solid #49FFFF 3px;
+        font-size: 14px;
+        white-space: nowrap;
+        transition: opacity 0.25s ease, visibility 0.25s ease;
+        z-index: 100;
+        pointer-events: none;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      }
+      .Rule23:hover .Rule23-info{
+        visibility: visible;
+        opacity: 1;
+      }
+      .Rule24 {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .Rule24-info{
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        background-color: black;
+        color: white;
+        padding: 8px 12px;
+        border-radius: 6px;
+        border: solid #49FFFF 3px;
+        font-size: 14px;
+        white-space: nowrap;
+        transition: opacity 0.25s ease, visibility 0.25s ease;
+        z-index: 100;
+        pointer-events: none;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      }
+      .Rule24:hover .Rule24-info{
+        visibility: visible;
+        opacity: 1;
+      }
+      .Rule25 {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .Rule25-info{
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        background-color: black;
+        color: white;
+        padding: 8px 12px;
+        border-radius: 6px;
+        border: solid #49FFFF 3px;
+        font-size: 14px;
+        white-space: nowrap;
+        transition: opacity 0.25s ease, visibility 0.25s ease;
+        z-index: 100;
+        pointer-events: none;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      }
+      .Rule25:hover .Rule25-info{
+        visibility: visible;
+        opacity: 1;
+      }
+      .Rule26 {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .Rule26-info{
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        background-color: black;
+        color: white;
+        padding: 8px 12px;
+        border-radius: 6px;
+        border: solid #49FFFF 3px;
+        font-size: 14px;
+        white-space: nowrap;
+        transition: opacity 0.25s ease, visibility 0.25s ease;
+        z-index: 100;
+        pointer-events: none;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      }
+      .Rule26:hover .Rule26-info{
+        visibility: visible;
+        opacity: 1;
+      }
+      .Rule27 {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .Rule27-info{
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        background-color: black;
+        color: white;
+        padding: 8px 12px;
+        border-radius: 6px;
+        border: solid #49FFFF 3px;
+        font-size: 14px;
+        white-space: nowrap;
+        transition: opacity 0.25s ease, visibility 0.25s ease;
+        z-index: 100;
+        pointer-events: none;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      }
+      .Rule27:hover .Rule27-info{
+        visibility: visible;
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+
+    </header>
+    <h1>Памятка по выдаче наказаний</h1>
+    <span class="Rule1">
+      <h2>3.1 - Читы и запрещённые модификации</h2>
+      <span class="Rule1-info"><pre>3.1 - наличие запрещённых модификаций и чит-клиентов
+    <b class="red">ВНИМАНИЕ в случае если у игрока модификация из списка банящихся на 30d то перед баном ОБЯЗАТЕЛЬНО убедиться о отсутствии таких-же банов ранее(/hist [ник])</b>
+    в случае если у игрока ранее было 2 или более банов по 30d с этой причиной то баним НАВСЕГДА
+  </pre></span></span> <br>
+  <b class="command">/ban [ник] 3.1 [название софта] server:anarchy</b> <br>
+  <b class="command">/ban [ник] 30d 3.1 [название софта] server:anarchy</b><br>
+    <span class="Rule2">
+      <h2>3.2 - Обход бана за читы/тим с софтом</h2>
+      <span class="Rule2-info"><pre>3.2 - обход бана за 3.1 или Банов YukiKawaii
+Если основной аккаунт в бане навсегда то обход бана действует в течение 3 месяцев
+Если основной аккаунт а бане на 30d то обход бана действует до конца бана
+</pre></span></span><br>
+<b class="command">/ban [ник] 3.2 [ник основы] server:anarchy</b><br>
+<b class="command">/ban [ник] 30d 3.2 [ник основы] server:anarchy</b><br>
+    <span class="Rule3">
+      <h2>3.3 - Правокация на нарушение правил</h2>
+      <span class="Rule3-info"><pre>3.3 Подстрекательство на нарушение правил - если нарушитель провоцирует игрока или модератора на нарушение правил сервера,
+то выдаем ему мут на 3 часа
+</pre></span></span><br>
+<b class="command">/mute [ник] 3h 3.3</b><br>
+    <span class="Rule4">
+      <h2>3.4 - Упоминание/Оскорбление родных</h2>
+      <span class="Rule4-info"><pre>3.4 Упоминание родных в оскорбительной форме - если в любом чате игрок упоминает родных (без оскорбления) - мут 1 час
+прямое оскорбление родных - мут 3ч
+</pre></span></span><br>
+<b class="command">/mute [ник] 1h 3.4 (упом.)</b><br>
+<b class="command">/mute [ник] 3h 3.4 (оск.)</b><br>
+    <span class="Rule5">
+      <h2>3.5 - Оскорбление и правокация модерации</h2>
+      <span class="Rule5-info"><pre>3.5 Оскорбление и провокация модерации
+        Eсли игрок упоминает в оскорбительной форме <span class="green">Мл. Модератора</span> мут на 1 час
+        Если игрок продолжает оскорблять с твинков - бан на 1 день
+        Если игрок упоминает в оскорбительной форме <b>Ст.Модератора</b> - бан на 1 день
+      </pre></span></span><br>
+<b class="command">/mute [ник] 1h 3.5</b><br>
+<b class="command">/ban [ник] 1d 3.5</b><br>
+    <span class="Rule6">
+      <h2>3.6 - Капс, Спам, Флуд, Оск, Неадекватное общение</h2>
+      <span class="Rule6-info"><pre>3.6 3.6 Флуд, спам, оскорбление игроков, капс, попрошайничество, неадекватное общение в чате/лс
+если игрок капсит, спамит, флудит, попрошайничает, общается неадекватно - предупреждение, если игрок продолжает - мут 20 минут
+Если игрок оскорбляет - мут на 20 минут
+</pre></span></span><br>
+<b class="command">/mute [ник] 20m 3.6 (капс)</b><br>
+<b class="command">/mute [ник] 20m 3.6 (флуд)</b><br>
+<b class="command">/mute [ник] 20m 3.6 (спам)</b><br>
+<b class="command">/mute [ник] 20m 3.6 (оск)</b><br>
+<b class="command">/mute [ник] 20m 3.6 (попрошайничество)</b><br>
+    <span class="Rule7">
+      <h2>3.7 - Взлом, Передача, Продажа аккаунта</h2>
+      <span class="Rule7-info"><pre>Передача, Продажа аккаунта сторонним лицам, Взлом
+Аккаунт продан - бан "3.7 Без возможноти Восстановления"
+Аккаунт передан - бан "3.7 Передача"
+Аккаунт взломан -бан "3.7 Восстановить аккаунт в лс группы —> https://vk.com/dex_land"
+<b class="red">ВНИМАНИЕ!!! Взломаные, Переданные, Проданные аккаунты банятся ТОЛЬКО в течение 90 Дней</b>
+</pre></span></span><br>
+<b class="command">/ban [ник] 3.7 (передача) server:anarchy</b><br>
+<b class="command">/ban [ник] 3.7 (Без возможноти Восстановления) server:anarchy</b><br>
+<b class="command">/ban [ник] 3.7 (Восстановить аккаунт в лс группы —> https://vk.com/dex_land) server:anarchy</b><br>
+    <span class="Rule8">
+      <h2>3.8 - Бан, Мут, Кик без причины</h2>
+      <span class="Rule8-info"><pre>3.8 Необоснованное наказание игроков - Баны, Муты, Кики
+Если игрок указал некорректную причину бана - бан на 8 часов на анархии, в которой был выдан бан
+Если причина бана игрока 3.1 , баним с припиской: "3.8 доказательства на бан в дс: [ваш дисскорд]"
+Если игрок замутил с неккоректной причиной или кикнул игрока без причины - бан на 2 часа, на анархии где было выдано наказание
+</pre></span></span><br>
+<b class="command">/ban [ник] 2h 3.8</b><br>
+<b class="command">/ban [ник] 8h 3.8</b><br>
+<b class="command">/ban [ник] 8h 3.8 (док-вы в дс [ваш дискорд])</b><br>
+    <span class="Rule9">
+      <h2>3.9 - Оскорбление проекта, Администрации</h2>
+      <span class="Rule9-info"><pre>3.9 Оскорбление проекта/администрации проекта - если игрок оскорбляет администратора или проект, то выдаем бан до 7 дней от тяжести оскорбления.
+      </pre></span></span><br>
+<b class="command">/ban [ник] 7d 3.9 server:anarchy</b><br>
+    <span class="Rule10">
+      <h2>3.10 - Ввод в заблуждение модерации</h2>
+      <span class="Rule10-info"><pre>3.10 Вводить в заблуждение, администрацию/модерацию проекта
+За подделку скриншотов или сообщений - блокировка аккаунта на 2 дня
+За бан мут несуществующих аккаунтов - блокировка аккаунта на 1 час
+За обман, подстрекательство на проверку - временный мут до 3-х дней
+<b class="red">ВНИМАНИЕ Прежде чем мутить за подстрекательство на проверку вы ОБЯЗАНЫ проверить игрока, в случае повторных нарушений проверка не обязательна</b>
+      </pre></span></span><br>
+<b class="command">/ban [ник] 2d 3.10 server:anarchy</b><br>
+<b class="command">/ban [ник] 1h 3.10</b><br>
+<b class="command">/mute [ник] 3d 3.10 server:anarchy</b><br>
+
+    <span class="Rule11">
+      <h2>3.11 - Багоюз, дюп</h2>
+      <span class="Rule11-info"><pre>3.11 Использование уязвимостей сервера багов, дюпов и другого - Блокировка аккаунта от 2-х дней до перманентного
+Если игрок использует баги, такие как лив за барьер PVP арены во время кд, в зону где нельзя наносить урон, то выдаем бан на 2 дня на определенной анке
+Трезубец на пвп арене тоже запрещен, выдаем бан 2 дня
+Если игрок использует дюп, то пишем YukiKawaii, так как такие наказание обычно выдает именно он
+<b class="red">ВНИМАНИЕ! Если игрок ливает с PVP арены от elitra-target - то он в праве так делать</b>
+      </pre></span></span><br>
+<b class="command">/ban [ник] 2d 3.11</b><br>
+    <span class="Rule12">
+      <h2>3.12 - Выдача себя за администрацию</h2>
+      <span class="Rule12-info"><pre>3.12 Выдача себя за администрацию или модерацию проекта
+Если игрок называет себя модератором или администратором сервера - выдаем бан на определенной анархии на два дня
+      </pre></span></span><br>
+<b class="command">/ban [ник] 2d 3.12</b><br>
+    <span class="Rule13">
+      <h2>3.13 - Использование оскорбляющих префиксов, суффиксов оскорбляющих игроков</h2>
+      <span class="Rule13-info"><pre>3.13  Использование никнеймов, префиксов и названий кланов, которые оскорбляют участников проекта,
+в которых упоминаются названия читов или других серверов - бан на 2 дня
+      </pre></span></span><br>
+<b class="command">/ban [ник] 2d 3.13</b><br>
+    <span class="Rule14">
+      <h2>3.14 - Реклама Сторонних проектов</h2>
+      <span class="Rule14-info"><pre>3.14 Реклама других проектов или лаунчеров - перманентный бан
+<b class="red">Упоминание хайпикселя не подлежит бану.
+Простое утверждение "играю через ..." не является основанием для бана.
+Упоминание других серверов в личке предупреждается, бану не подрежит</b>
+      </pre></span></span><br>
+<b class="command">/ban [ник] 3.14 server:anarchy</b><br>
+    <span class="Rule15">
+      <h2>3.15 - Продажа игровых ценностей за реальные деньги</h2>
+      <span class="Rule15-info"><pre>3.15 Продажа Монет или Ресурсов за реальную валюту - перманентный бан
+      </pre></span></span><br>
+<b class="command">/ban [ник] 3.15 server:anarchy</b><br>
+    <span class="Rule16">
+      <h2>3.16 - Создание лаг машин</h2>
+      <span class="Rule16-info"><pre>3.16 Устанавливать или создавать объекты для лагов на сервере
+<b class="red">ВНИМАНИЕ Блокировками по данному правилу занимается непосредственно YukiKawaii, если вы видите то сообщите о нарушении Владельцу сервера</b>
+      </pre></span></span><br>
+    <span class="Rule17">
+      <h2>3.17 - Многочисленное нарушени правил, Вредительство</h2>
+      <span class="Rule17-info"><pre>3.17 Многочисленное нарушение правил, вредительство, мошенничество
+Если игрок многократно нарушает правила, например 3.8 - бан от 2 до 7 дней, зависит от количества нарушений
+Если игрок пишет сообщение на подобие "Плачу 100₽ за 1 звонок" или "Плачу 200₽ за регистрацию" - бан навсегда с припиской "3.17 Мошеничество"
+<b class="red">В случае если у игрока за месяц было 2 бана по 3.17 на 7 дней либо 3-4 бана по 2-5 дней - бан перманентный</b>
+</pre></span></span><br>
+<b class="command">/ban [ник] 2d 3.17</b><br>
+<b class="command">/ban [ник] 5d 3.17</b><br>
+<b class="command">/ban [ник] 7d 3.17 server:anarchy</b><br>
+<b class="command">/ban [ник] 3.17 server:anarchy</b><br>
+    <span class="Rule18">
+      <h2>3.18 - Размут, Саморазмут нарушителя</h2>
+      <span class="Rule18-info"><pre>3.18 Размут, Саморазмут нарушителя
+Если игрок размутил неккоректный мут - бана нет, игрока который его замутил - бан на 2 часа по 3.8
+Если игрок размутил корректный мут - бан на 2 часа
+      </pre></span></span><br>
+<b class="command">/ban [ник] 2h 3.18</b><br>
+    <span class="Rule19">
+      <h2>3.19 - Продажа сторонних ресурсов</h2>
+      <span class="Rule19-info"><pre>3.19 Продажа строронних ресурсов Аккаунтов, Подписок, Лицензий
+Если игрок ранее не нарушал - выдаём предупреждение
+Если игрок не реагирует на предупреждение - бан или мут на 2ч
+<b class="red">Если игрок нарушал на всех анархиях, мут выдаётся на все анархии</b>
+      </pre></span></span><br>
+<b class="command">/mute [ник] 2h 3.19</b><br>
+<b class="command">/ban [ник] 2h 3.19 server:anarchy</b><br>
+    <span class="Rule20">
+      <h2>3.20 - Подделка сообщений</h2>
+      <span class="Rule20-info"><pre>
+      </pre></span></span><br>
+    <span class="Rule21">
+      <h2>3.21 - Разжигие национальной, межрассовой розни</h2>
+      <span class="Rule21-info"><pre>
+      </pre></span></span><br>
+    <span class="Rule22">
+      <h2>3.22 - Распространение Дизинформации</h2>
+      <span class="Rule22-info"><pre>
+      </pre></span></span><br>
+    <span class="Rule23">
+      <h2>3.23 - Создание Оскорбляющих ников</h2>
+      <span class="Rule23-info"><pre>
+      </pre></span></span><br>
+    <span class="Rule24">
+      <h2>3.24 - Тим с Читером</h2><span class="Rule24-info"><pre>
+      </pre></span></span><br>
+    <span class="Rule25">
+      <h2>3.25 - Разглашение личной информации</h2>
+      <span class="Rule25-info"><pre>
+      </pre></span></span><br>
+    <span class="Rule26">
+      <h2>3.26 - Создание, Распространение 18+ контента</h2>
+      <span class="Rule26-info"><pre>
+      </pre></span></span><br>
+    <span class="Rule27">
+      <h2>3.27 - Накрутка статистики килов, Смертей</h2>
+      <span class="Rule27-info"><pre>
+      </pre></span></span><br>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+header {
+  text-align: center;
+}
+.ss {
+  background color: blue;
+}
+h1 {
+  text-align: center;
+  background-color: yellow;
+  border: solid black 2px;
+}
+h2 {
+  text-align: center;
+  background-color: red;
+  border: solid black 2px;
+}
+h3 {
+  background-color: #50A7FF;
+  text-align: center;
+  border: solid black 2px;
+}
+img {
+  height: 300px;
+  width: 400px;
+}
+a {
+  color:blue;
+}
+div {
+  text-align: center;
+}
+li {
+  text-align: left;
+}
+div{
+  border-radius: 10px black;
+}
+div p{
+  text-align: left;
+  font-size: 30px;
+}
+div b {
+  text-align: left;
+  font-size: 20px;
+  margin: -10px;
+}
+.masege{
+  background-color: green;
+  padding: 15px;
+  border-radius: 40%;
+  border: solid black 4px;
+}
+.btn {
+  width: 100%
+}
+.alert {
+  position: fixed !important;
+  top: 10px;
+  left: 50px;
+  right: 50px;
+  text-align: center;
+  transform: translateY(-150%);
+  transform: .6s;
+}
+.alert.active {
+  transform: translateY(0%);
+}

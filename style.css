@@ -1,0 +1,25 @@
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  max-width: 50% !important;
+}
+.btn {
+  width: 100%
+}
+.alert {
+  position: fixed !important;
+  top: 10px;
+  left: 50px;
+  right: 50px;
+  text-align: center;
+  transform: translateY(-150%);
+  transform: .6s;
+}
+.alert.active {
+  transform: translateY(0%);
+}
